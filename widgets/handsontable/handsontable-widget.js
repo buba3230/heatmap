@@ -76,13 +76,13 @@ class CustomHandsontableWidgetCtrl {
                       td.removeChild(td.firstChild);
                     }
                     
-                    var flagElement = document.createElement('DIV');
-                    flagElement.setAttribute('id','c-'+row+'-'+(col-1));
-                    flagElement.style.height='50px';
-                    flagElement.style.width='150px';
-                    td.appendChild(flagElement);
-                    var textNode = document.createTextNode(value === null ? '' : value);
-                    td.appendChild(textNode);
+                    var heatElement = document.createElement('DIV');
+                    heatElement.setAttribute('id','c-'+row+'-'+(col-1));
+                    heatElement.style.height='50px';
+                    heatElement.style.width='150px';
+                    td.appendChild(heatElement);
+                    var valueNode = document.createTextNode(value === null ? '' : value);
+                    td.appendChild(valueNode);
                     
                   };
             
