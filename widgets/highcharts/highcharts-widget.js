@@ -38,7 +38,9 @@ class CustomHighchartsWidgetCtrl {
                     '.95': 'hsl(0, 100%, '+(100-percents[c].percent)+'%)'
                   }
               };
-            var heatmap = h337.create(config);
+
+
+         var heatmap = h337.create(config);
             var drawObj ={
                x: 50,
                y: 50,
