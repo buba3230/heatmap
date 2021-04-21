@@ -1,3 +1,63 @@
 .widget {
     border: 1px solid #f7f7f7;
 }
+
+.rowHeatmap{
+    width:700px;
+    display: flex;
+    flex-direction: row;
+}
+ .cell{
+      height: 100px;
+      width: 100px;
+      border:1px solid black;
+      text-align: center;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 12px;
+  }
+
+  .txt{
+    font-size: 12px;
+    font-weight: bolder;
+  }
+.wrap{
+    display: flex;
+    flex-direction: row;
+}
+  .legend{
+      margin-left: 50px;
+      width:200px;
+      height: 400px;
+      display: flex;
+      flex-direction: row;
+  }
+
+  .legend_cell{
+    height: 25px;
+    width: 50px;
+    border:1px solid black;
+    overflow: hidden;
+}
+.values_cell{
+    height: 25px;
+    width: 150px;
+    border:1px solid black;
+}
+
+.cells{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.handsontable span.colHeader{
+    display: flex;
+    height: 50px;
+    justify-content: center;
+      align-items: center;
+      line-height: 30px;
+      white-space: normal;
+}

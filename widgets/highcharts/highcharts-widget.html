@@ -1,5 +1,82 @@
 <h2>Custom Highcharts Widget</h2>
-
+<div class="wrap">
+    <div id="container" style="width:700px; height:440px;">
+        <div class="rowHeatmap" ng-repeat="columnHeader in $ctrl.columnHeaders track by $index">
+                <div class="cell txt" ng-repeat="item in columnHeader track by $index">{{item}}</div>
+        </div>
+        <div class="rowHeatmap">
+            <div class="cell">Actual</div>
+            <div class="cell"><div id="draw-0-0" style="width:100%; height:100%;"></div></div>
+            <div class="cell"><div id="draw-0-1" style="width:100%; height:100%;"></div></div>
+            <div class="cell"><div id="draw-0-2" style="width:100%; height:100%;"></div></div>
+            <div class="cell"><div id="draw-0-3" style="width:100%; height:100%;"></div></div>
+            <div class="cell"><div id="draw-0-4" style="width:100%; height:100%;"></div></div>
+            <div class="cell"><div id="draw-0-5" style="width:100%; height:100%;"></div></div>
+        </div>
+        <div class="rowHeatmap">
+            <div class="cell">Budget</div>
+            <div class="cell"><div id="draw-1-0" style="width:100%; height:100%;"></div></div>
+            <div class="cell"><div id="draw-1-1" style="width:100%; height:100%;"></div></div>
+            <div class="cell"><div id="draw-1-2" style="width:100%; height:100%;"></div></div>
+            <div class="cell"><div id="draw-1-3" style="width:100%; height:100%;"></div></div>
+            <div class="cell"><div id="draw-1-4" style="width:100%; height:100%;"></div></div>
+            <div class="cell"><div id="draw-1-5" style="width:100%; height:100%;"></div></div>
+        </div>
+        <div class="rowHeatmap">
+            <div class="cell">Last year</div>
+            <div class="cell"><div id="draw-2-0" style="width:100%; height:100%;"></div></div>
+            <div class="cell"><div id="draw-2-1" style="width:100%; height:100%;"></div></div>
+            <div class="cell"><div id="draw-2-2" style="width:100%; height:100%;"></div></div>
+            <div class="cell"><div id="draw-2-3" style="width:100%; height:100%;"></div></div>
+            <div class="cell"><div id="draw-2-4" style="width:100%; height:100%;"></div></div>
+            <div class="cell"><div id="draw-2-5" style="width:100%; height:100%;"></div></div>
+        </div>
+    </div>
+    <div class="legend">
+        <div class="cels">
+            <div id="cell-0"  class="legend_cell"></div>
+            <div id="cell-1"  class="legend_cell"></div>
+            <div id="cell-2"  class="legend_cell"></div>
+            <div id="cell-3"  class="legend_cell"></div>
+            <div id="cell-4"  class="legend_cell"></div>
+            <div id="cell-5"  class="legend_cell"></div>
+            <div id="cell-6"  class="legend_cell"></div>
+            <div id="cell-7"  class="legend_cell"></div>
+            <div id="cell-8"  class="legend_cell"></div>
+            <div id="cell-9"  class="legend_cell"></div>
+            <div id="cell-10"  class="legend_cell"></div>
+            <div id="cell-11"  class="legend_cell"></div>
+            <div id="cell-12"  class="legend_cell"></div>
+            <div id="cell-13"  class="legend_cell"></div>
+            <div id="cell-14"  class="legend_cell"></div>
+            <div id="cell-15"  class="legend_cell"></div>
+            <div id="cell-16"  class="legend_cell"></div>
+            <div id="cell-17"  class="legend_cell"></div>
+        </div>
+        <div class="values">
+            <div id="vcell-0"  class="values_cell"></div>
+            <div id="vcell-1"  class="values_cell"></div>
+            <div id="vcell-2"  class="values_cell"></div>
+            <div id="vcell-3"  class="values_cell"></div>
+            <div id="vcell-4"  class="values_cell"></div>
+            <div id="vcell-5"  class="values_cell"></div>
+            <div id="vcell-6"  class="values_cell"></div>
+            <div id="vcell-7"  class="values_cell"></div>
+            <div id="vcell-8"  class="values_cell"></div>
+            <div id="vcell-9"  class="values_cell"></div>
+            <div id="vcell-10"  class="values_cell"></div>
+            <div id="vcell-11"  class="values_cell"></div>
+            <div id="vcell-12"  class="values_cell"></div>
+            <div id="vcell-13"  class="values_cell"></div>
+            <div id="vcell-14"  class="values_cell"></div>
+            <div id="vcell-15"  class="values_cell"></div>
+            <div id="vcell-16"  class="values_cell"></div>
+            <div id="vcell-17"  class="values_cell"></div>
+        </div>
+        
+    </div>
+</div>
+    <hr>
 <table class="table table-striped">
     <thead>
         <tr ng-repeat="columnHeader in $ctrl.columnHeaders track by $index">
